@@ -1,0 +1,142 @@
+:root{
+    --black:rgb(58, 58, 58);
+    --white:#fff;
+    --light-gray:rgb(250, 250, 250);
+    --gray:#eee;
+    --dark-gray:rgb(144,144,144);
+    --primary:rgb(212, 0, 231);
+
+}
+
+
+
+*{
+    box-sizing: border-box;
+    position: relative;
+    margin: 0;
+}
+
+html, body{
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-family: Roboto, sana-serif;
+    width: 100%;
+    height: 100%;
+}
+
+.post {
+    width:100%;
+    padding-top: 50vh;
+    padding-bottom: 40px;
+    background-color: var(--gray);
+
+}
+
+
+.post-bg-wrapper{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    max-height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.post-bg{
+    
+    width:100%;
+    height: 100%;
+    background-image: url("/img/forest.jpg");
+    background-size: cover; /*حتى تنعرض الصورة مليح*/
+    filter: blur(5px);
+    background-position: center center;/*حتى الصورة تصيغ بالنص*/
+    max-height: 100vh;/*حتى النص ينصل لي جوا الصراحة ما حلو*/
+
+}
+
+.post-content{
+    padding: 20px;
+    background-color: var(--white);
+    margin: 0 20px;
+    box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.1);
+    background-color: var(--gray);
+}
+
+.post-content .title{
+    font-size: 1.25rem;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.post-content .text{
+    font-size: 1rem;
+    font-weight: 300;
+    text-align: justify;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+
+@media (min-width:1200px) {
+    .post-content{
+        margin: 0 auto;
+        width: 800px; /*حجم الخط يعني كم كلمة بالسطر*/
+        padding: 40px;
+     
+    }
+    
+    .post-content .title{
+        font-size: 2.5rem;
+    }
+    
+    .post-content .text{
+        font-size: 1.5rem;
+    }
+
+    .post-content .text:last-child{/*last class*/
+        margin-bottom: 0;
+    }
+    
+}
+
+.post-bg-2{
+    
+    width:100%;
+    height: 100%;
+    background-image: url("/img/space.jpg");
+    background-size: cover; /*حتى تنعرض الصورة مليح*/
+    filter: blur(5px);
+    background-position: center center;/*حتى الصورة تصيغ بالنص*/
+    max-height: 100vh;/*حتى النص ينصل لي جوا الصراحة ما حلو*/
+
+}
+
+.post-bg-3{
+    
+    width:100%;
+    height: 100%;
+    background-image: url("/img/sweets.jpg");
+    background-size: cover; /*حتى تنعرض الصورة مليح*/
+    filter: blur(5px);
+    background-position: center center;/*حتى الصورة تصيغ بالنص*/
+    max-height: 100vh;/*حتى النص ينصل لي جوا الصراحة ما حلو*/
+
+}
+
+.post-content .content p{
+    font-size: 1.25rem;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+
+.post-content .content h1,
+.post-content .content h2,
+.post-content .content h3,
+.post-content .content h4,
+.post-content .content h5,
+.post-content .content h6{
+margin-bottom: 24px;
+}
